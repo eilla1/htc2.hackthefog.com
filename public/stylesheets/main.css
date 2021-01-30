@@ -1,0 +1,42 @@
+
+body {
+    height: 100%;
+    padding-left: 300px;
+    padding-top: 50px;
+    background-color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+.left-navigation {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 260px;
+    height: 100%;
+    background-color: white;
+}
+.nav-link {
+    display: block;
+    padding: 30px;
+    padding-left: 10px;
+    color: gray;
+    font-size: 15px;
+    text-align: left;
+    text-transform: uppercase;
+}
+/* .nav-link:hover {
+    color: pink; 
+} */
+
+.nav-menu {
+    float: none;
+    background: rgba(128, 128, 128, 0.205);
+}
+
+a{
+    font-size: 20px;
+}
+br {
+    top: 50px;
+}
