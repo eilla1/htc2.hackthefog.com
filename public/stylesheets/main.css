@@ -1,3 +1,10 @@
+@import './shared/fonts.css';
+
+:root {
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    
+}
 
 body {
     height: 100%;
