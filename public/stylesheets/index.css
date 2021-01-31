@@ -17,6 +17,7 @@
 	color: rgba(0, 0, 0, 0.74);
 	font-size: 16px;
 	line-height: 20px;
+	display: block;
 }
 
 .banner-heading {
@@ -27,11 +28,20 @@
 	color: white;
 	font-size: 40px;
 	font-weight: bold;
-
+	margin-bottom: 20px;
+	position: relative;
 }
 
 #htc-name {
 	color: white;
 	font-size: 35px;
 	font-weight: bold;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+#banner-button {
+	position: relative;
+	margin-top: 10px;
+	border-style: none;
 }

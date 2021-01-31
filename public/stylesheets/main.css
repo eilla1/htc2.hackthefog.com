@@ -31,6 +31,10 @@ h1 {
     margin-top: 0;
 }
 
+button {
+    border: none;
+}
+
 .left-navigation {
     position: fixed;
     left: 0px;
@@ -70,4 +74,13 @@ h1 {
 
 .content {
     height: 100%;
+}
+
+.register-button {
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: orange;
+    padding: 10px 30px;
+    border-radius: 5px;
 }
