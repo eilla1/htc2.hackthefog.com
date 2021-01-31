@@ -8,7 +8,7 @@
 html {
     padding: 0px;
     height: 100%;
-    -webkit-text-size-adjust: none;
+    /*-webkit-text-size-adjust: none;*/
 }
 
 body {
@@ -32,8 +32,9 @@ h1 {
     margin-top: 0;
 }
 
-button {
+button, input {
     border: none;
+    cursor: pointer;
 }
 
 .left-navigation {
@@ -84,4 +85,8 @@ button {
     background-color: orange;
     padding: 10px 30px;
     border-radius: 5px;
+}
+
+.register-button:hover {
+    filter: brightness(85%);
 }
