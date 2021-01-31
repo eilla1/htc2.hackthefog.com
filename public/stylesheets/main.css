@@ -5,14 +5,18 @@
     font-size: 20px;
     
 }
+html {
+    padding: 0px;
+}
 
 body {
     height: 100%;
-    padding-left: 300px;
-    padding-top: 50px;
+    padding-left: 260px;
     background-color: white;
     font-size: 16px;
     line-height: 20px;
+    display: block;
+    margin: 0;
 }
 
 a {
@@ -21,10 +25,9 @@ a {
     text-decoration: inherit; /* no underline */
 }
 
-br {
-    top: 50px;
+h1 {
+    margin-top: 0;
 }
-
 .left-navigation {
     position: fixed;
     left: 0px;
@@ -36,7 +39,7 @@ br {
 }
 .nav-link {
     display: block;
-    padding: 10 0 10 0;
+    padding: 10px 0px 10px 0px;
     color: black;
     font-size: 15px;
     text-align: left;
@@ -52,10 +55,20 @@ br {
     border-style: none solid none none;
     border-right-width: 1px;
     border-color: lightgray;
+    max-width: 260px;
 }
 
 
 #nav-htc-title {
     text-align: center;
     color: blue;
+}
+
+#home-screen {
+    height: 100%;
+    background-color: blue;
+}
+
+.content {
+    padding-left: 10px;
 }
