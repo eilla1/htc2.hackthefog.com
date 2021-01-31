@@ -12,7 +12,7 @@ html {
 
 body {
     
-    padding-left: 260px;
+    padding-left: 261px;
     background-color: white;
     font-size: 16px;
     line-height: 20px;
@@ -59,6 +59,7 @@ h1 {
     border-right-width: 1px;
     border-color: lightgray;
     max-width: 260px;
+    border-radius: 5px;
 }
 
 
