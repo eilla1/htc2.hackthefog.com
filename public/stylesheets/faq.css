@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+.column1 {
+    width: 100%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+    }
+}
+.container {
+    padding-top: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background: #F7F9FC;
+}
