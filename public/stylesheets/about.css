@@ -46,6 +46,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding: auto;
+    text-align: center;
 }
 .banner2 {
     /* height: 100%;
