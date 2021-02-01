@@ -92,6 +92,16 @@ button, input {
     z-index: 10;
 }
 
+/* Hide side nav if mobile screen */
+@media screen and (max-width: 800px) {
+    #nav-menu {
+      display: none;
+    }
+    body {
+        padding-left: 0px;
+    }
+}
+
 footer {
     padding: 5px;
 }
