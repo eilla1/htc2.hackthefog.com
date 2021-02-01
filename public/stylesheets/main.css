@@ -94,12 +94,13 @@ button, input {
 
 /* Hide side nav if mobile screen */
 @media screen and (max-width: 800px) {
-    #nav-menu {
+    #nav-side-menu {
       display: none;
     }
     body {
         padding-left: 0px;
     }
+
 }
 
 footer {
