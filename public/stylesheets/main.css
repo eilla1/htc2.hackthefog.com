@@ -81,14 +81,15 @@ button, input {
 .register-button {
     color: white;
     font-size: 12px;
-    line-height: 16px;
     background-color: orange;
     padding: 10px 30px;
     border-radius: 5px;
+    z-index: 10;
 }
 
 .register-button:hover {
     filter: brightness(85%);
+    z-index: 10;
 }
 
 footer {
