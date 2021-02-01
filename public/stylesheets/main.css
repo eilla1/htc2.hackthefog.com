@@ -13,7 +13,7 @@ html {
 
 body {
     
-    padding-left: 261px;
+    padding-left: 258px;
     background-color: white;
     font-size: 16px;
     line-height: 20px;
@@ -63,9 +63,10 @@ button, input {
     background: #fafcff;
     border-style: none solid none none;
     border-right-width: 1px;
-    border-color: lightgray;
+    border-color: gray;
     max-width: 260px;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 10;
 }
 
 
@@ -100,6 +101,7 @@ button, input {
     body {
         padding-left: 0px;
     }
+
 
 }
 
