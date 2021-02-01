@@ -90,3 +90,7 @@ button, input {
 .register-button:hover {
     filter: brightness(85%);
 }
+
+footer {
+    padding: 5px;
+}
