@@ -13,7 +13,7 @@ html {
 
 body {
     
-    padding-left: 261px;
+    padding-left: 258px;
     background-color: white;
     font-size: 16px;
     line-height: 20px;
@@ -63,9 +63,10 @@ button, input {
     background: #fafcff;
     border-style: none solid none none;
     border-right-width: 1px;
-    border-color: lightgray;
+    border-color: gray;
     max-width: 260px;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
+    z-index: 10;
 }
 
 
@@ -81,14 +82,27 @@ button, input {
 .register-button {
     color: white;
     font-size: 12px;
-    line-height: 16px;
     background-color: orange;
     padding: 10px 30px;
     border-radius: 5px;
+    z-index: 10;
 }
 
 .register-button:hover {
     filter: brightness(85%);
+    z-index: 10;
+}
+
+/* Hide side nav if mobile screen */
+@media screen and (max-width: 800px) {
+    #nav-side-menu {
+      display: none;
+    }
+    body {
+        padding-left: 0px;
+    }
+
+
 }
 
 footer {
