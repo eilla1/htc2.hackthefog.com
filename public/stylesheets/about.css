@@ -1,0 +1,71 @@
+.column1 {
+    float: left;
+    height: 100%;
+    width: 35%;
+    padding: 10px;
+}
+.column2 {
+    float: right;
+    width: 65%;
+    max-height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/news-card.jpg");
+    background-position: 100%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    position: relative;
+    border-radius: 0.5rem;
+}
+.column2 span {
+    float: right;
+    display: block;
+    width: 15%;
+    height: 100%;
+    background-color: #6e83a3;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.5em 1em 0.5em 0.5em;
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+.column3 {
+    float: left;
+    width: 33%;
+    padding: 5px;
+}
+.column3 img {
+    position: center;
+    height: 130px;
+    width: 130px;
+    border-radius: 65px;
+    padding: 0px;
+    margin: 0px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.banner2 {
+    /* height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/slides/slide8.jpg");
+    background-position: 0% 0%, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat; */
+}
+.abouth2 {
+    padding-left: 8px;
+    color: black;
+}
+@media screen and (max-width: 800px) {
+    .column1 {
+      width: 100%;
+    }
+    .column2 {
+        width: 100%;
+    }
+    .column3 {
+        width: 100%;
+    }
+}
