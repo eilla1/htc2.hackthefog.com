@@ -88,7 +88,6 @@ button, input {
     display: block;
     padding-left: 10px 0px 10px 0px;
     color: black;
-    float: left
 }
 
 .mobile-nav-menu {
@@ -97,9 +96,99 @@ button, input {
     border-style: none solid none none;
     border-right-width: 1px;
     border-color: gray;
-    border-radius: 0px 0px 5px tpx;
+    border-radius: 0px 0px 5px 0px;
     z-index: 10;
 }
+
+#mobile-nav-htc-title {
+    float: left;
+    text-align: left;
+}
+
+#nav-top-menu #mobile-link-container {
+    display: none;
+}
+
+/* Style the hamburger menu */
+
+/*$height-icon: 12.5px;
+$width-line: 25px;
+$height-line: 2px;
+
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;*/
+
+
+#hamburger-icon {
+  width: 25px;
+  height: 12.5px;
+  position:relative;
+  display:block;
+  margin: 25px auto 12.5px auto;
+}
+
+.line {
+    display:block;
+    background: black;
+    width:25px;
+    height: 2px;
+    position:absolute;
+    left:0;
+    border-radius: 1px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+.line-1 {
+  top:0;
+}
+.line-2 {
+  top:50%;
+}
+.line-3 {
+  top:100%;
+}
+
+#hamburger-icon:hover .line-1 {
+    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+    -moz-transform: translateY(-1px); 
+}
+#hamburger-icon:hover .line-3 {
+    transform: translateY(1px);
+    -webkit-transform: translateY(1px);
+    -moz-transform: translateY(1px);
+}
+
+#hamburger-icon.active {
+    .line-1 {
+      transform: translateY(1px) translateX(0) rotate(45deg);
+      -webkit-transform: translateY(1px) translateX(0) rotate(45deg);
+      -moz-transform: translateY(1px) translateX(0) rotate(45deg);
+    }
+    .line-2 {
+      opacity:0;
+    }
+    .line-3 {
+      transform: translateY(-1px) translateX(0) rotate(-45deg);
+      -webkit-transform: translateY(-1px) translateX(0) rotate(-45deg);
+      -moz-transform: translateY(-1px) translateX(0) rotate(-45deg);
+    }
+}
+
+#hamburger-icon a {
+  text-decoration:none;
+  color:#95a5a6;
+  margin: 0.5em 1.5em;
+  display:inline-block;
+  &:hover, &:focus {
+    color:#ecf0f1;
+  }
+}
+
 .content {
     height: 100%;
 }
@@ -117,6 +206,8 @@ button, input {
     filter: brightness(85%);
     z-index: 10;
 }
+
+
 
 /* Hide side nav if mobile screen */
 @media screen and (max-width: 800px) {
