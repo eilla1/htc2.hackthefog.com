@@ -41,21 +41,25 @@ button, input {
     position: fixed;
     left: 0px;
     top: 0px;
-    bottom: 0px;
+    bottom: auto;
     width: 260px;
     height: 100%;
     /*background-color: white;*/
+    z-index: 1;
+    left: 0;
+    transition: 0.5s;
 }
 .nav-link {
     display: block;
-    padding: 10px 0px 10px 0px;
-    color: black;
+    padding: 39px 0px 10px 0px;
+    color: #FF7251;
     font-size: 15px;
     text-align: left;
     font-weight: bold;
+    transition: 0.3s;
 }
 .nav-link:hover {
-    color: blue; 
+    color: #207AEE; 
 }
 
 .nav-menu {
@@ -66,13 +70,25 @@ button, input {
     border-color: gray;
     max-width: 260px;
     border-radius: 0px 5px 5px 0px;
-    z-index: 10;
+    z-index: 10;    
 }
 
+/* .nav ul {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: auto;
+} */
+
+ul {
+    margin: 0px;
+}
 
 #nav-htc-title {
     text-align: center;
-    color: blue;
+    color: #207AEE;
 }
 
 .mobile-navigation {
@@ -193,10 +209,11 @@ $translateX: 0;*/
 .register-button {
     color: white;
     font-size: 12px;
-    background-color: orange;
+    background-color: #FF4F0A;
     padding: 10px 30px;
     border-radius: 5px;
     z-index: 10;
+    margin-top: 26px;
 }
 
 .register-button:hover {
@@ -221,6 +238,9 @@ $translateX: 0;*/
 
 }
 
+.route {
+    padding: 5px;
+}
 footer {
     padding: 5px;
 }

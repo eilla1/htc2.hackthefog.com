@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+.title {
+    color: #207AEE;
+}
 .column {
     float: left;
     width: 50%;
