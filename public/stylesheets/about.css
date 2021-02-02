@@ -1,12 +1,12 @@
 .column1 {
     float: left;
     height: 100%;
-    width: 35%;
+    width: 45%;
     padding: 10px;
 }
 .column2 {
     float: right;
-    width: 65%;
+    width: 55%;
     max-height: 100%;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/news-card.jpg");
     background-position: 100%;
@@ -18,14 +18,14 @@
 .column2 span {
     float: right;
     display: block;
-    width: 15%;
+    width: 20%;
     height: 100%;
     background-color: #207AEE;
     color: white;
     font-weight: bold;
     box-sizing: border-box;
     font-size: 1rem;
-    padding: 0.5em 1em 0.5em 0.5em, auto;
+    padding: 2.5em 0.5em 2.5em 0.5em;
     border-radius: 0rem 0.5rem 0.5rem 0rem;
 }
 .column3 {
@@ -37,6 +37,9 @@
     position: center;
     height: 130px;
     width: 130px;
+    border-style: solid;
+    border-color: #FF4F0A;
+    border-width: 3px;
     border-radius: 65px;
     padding: 0px;
     margin: 0px;
@@ -67,7 +70,15 @@
     .column2 {
         width: 100%;
     }
+    .column2 span {
+        width: 35%;
+    }
     .column3 {
         width: 100%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .column2 span {
+        width: 40%;
     }
 }
