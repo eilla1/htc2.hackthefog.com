@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/stylesheets/about.css">
     <link rel="stylesheet" href="/stylesheets/sponsors.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Hack the Cloud 2.0</title>
 </head>
@@ -22,21 +23,21 @@
     <script>
         // AOS.init();
         document.querySelector('html').classList.remove('no-js');
-        if (!window.Cypress) {
-        const scrollCounter = document.querySelector('.js-scroll-counter');
+            if (!window.Cypress) {
+            const scrollCounter = document.querySelector('.js-scroll-counter');
 
-        AOS.init({
-          mirror: true
-        });
+            AOS.init({
+              mirror: true
+            });
 
-        document.addEventListener('aos:in', function(e) {
-          console.log('in!', e.detail);
-        });
+            document.addEventListener('aos:in', function(e) {
+              console.log('in!', e.detail);
+            });
 
-        window.addEventListener('scroll', function() {
-          scrollCounter.innerHTML = window.pageYOffset;
-        });
-      }
+            window.addEventListener('scroll', function() {
+              scrollCounter.innerHTML = window.pageYOffset;
+            });
+        }
     </script>
 </body>
 </html>
