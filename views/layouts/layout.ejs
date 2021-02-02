@@ -40,5 +40,15 @@
             });
         }
     </script>
+    <script type="text/javascript">
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        $( document ).ready(function() {
+          var hamburger = $('#hamburger-icon');
+          hamburger.click(function() {
+                hamburger.toggleClass('active');
+                return true;
+          });
+        });
+    </script>
 </body>
 </html>
