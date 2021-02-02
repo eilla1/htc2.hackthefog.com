@@ -124,9 +124,9 @@ $translateX: 0;*/
 #hamburger-icon {
   width: 25px;
   height: 12.5px;
-  position:relative;
+  position: relative;
   display:block;
-  margin: 25px auto 12.5px auto;
+  margin: 20px 10px auto auto;
 }
 
 .line {
@@ -163,20 +163,20 @@ $translateX: 0;*/
     -moz-transform: translateY(1px);
 }
 
-#hamburger-icon.active {
-    .line-1 {
-      transform: translateY(1px) translateX(0) rotate(45deg);
-      -webkit-transform: translateY(1px) translateX(0) rotate(45deg);
-      -moz-transform: translateY(1px) translateX(0) rotate(45deg);
-    }
-    .line-2 {
-      opacity:0;
-    }
-    .line-3 {
-      transform: translateY(-1px) translateX(0) rotate(-45deg);
-      -webkit-transform: translateY(-1px) translateX(0) rotate(-45deg);
-      -moz-transform: translateY(-1px) translateX(0) rotate(-45deg);
-    }
+#hamburger-icon.active .line-1 {
+    transform: translateY(6.25px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(6.25px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(6.25px) translateX(0) rotate(45deg);
+}
+
+#hamburger-icon.active .line-2 {
+    opacity:0;
+}
+
+#hamburger-icon.active .line-3 {
+    transform: translateY(-6.25px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-6.25px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-6.25px) translateX(0) rotate(-45deg);
 }
 
 #hamburger-icon a {
@@ -184,9 +184,6 @@ $translateX: 0;*/
   color:#95a5a6;
   margin: 0.5em 1.5em;
   display:inline-block;
-  &:hover, &:focus {
-    color:#ecf0f1;
-  }
 }
 
 .content {
