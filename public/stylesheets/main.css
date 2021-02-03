@@ -118,7 +118,12 @@ ul {
 
 #mobile-nav-htc-title {
     float: left;
+    margin-left: 10px;
+    margin-top: 17px;
     text-align: left;
+    text-align: center;
+    color: #207AEE;
+
 }
 
 #nav-top-menu #mobile-link-container {
@@ -142,7 +147,7 @@ $translateX: 0;*/
   height: 12.5px;
   position: relative;
   display:block;
-  margin: 20px 10px auto auto;
+  margin: 19px 10px auto auto;
 }
 
 .line {
