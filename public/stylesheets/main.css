@@ -126,8 +126,15 @@ ul {
 
 }
 
-#nav-top-menu #mobile-link-container {
+#nav-top-menu {
     display: none;
+}
+
+.hide-mobile-link-container {
+    display: none;
+}
+.display-mobile-link-container {
+    display: block;
 }
 
 /* Style the hamburger menu */
