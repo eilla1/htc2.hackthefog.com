@@ -44,8 +44,10 @@
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
         $( document ).ready(function() {
           var hamburger = $('#hamburger-icon');
+          var mobile_link_container = $('#mobile-link-container')
           hamburger.click(function() {
                 hamburger.toggleClass('active');
+                mobile_link_container.toggleClass('display-mobile-link-container')
                 return true;
           });
         });
