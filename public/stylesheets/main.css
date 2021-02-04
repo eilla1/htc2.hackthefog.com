@@ -255,4 +255,8 @@ $translateX: 0;*/
 }
 footer {
     padding: 5px;
+    color: white;
+}
+.footer {
+    background-color: #207AEE;
 }
