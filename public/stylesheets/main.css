@@ -134,7 +134,7 @@ ul {
 #mobile-link-container {
     background: white;
     padding: none;
-    /*display: inline-block;*/
+    z-index: 5;
 
 }
 
@@ -228,13 +228,12 @@ $translateX: 0;*/
     background-color: #FF4F0A;
     padding: 10px 30px;
     border-radius: 5px;
-    z-index: 10;
+    z-index: 5;
     margin-top: 26px;
 }
 
 .register-button:hover {
     filter: brightness(85%);
-    z-index: 5;
 }
 
 
@@ -248,7 +247,7 @@ $translateX: 0;*/
         padding-left: 0px;
     }
     .mobile-nav-menu {
-        display: inline-block;
+        display: block;
     }
 
 
