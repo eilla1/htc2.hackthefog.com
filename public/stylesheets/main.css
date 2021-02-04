@@ -126,17 +126,17 @@ ul {
 
 }
 
-#nav-top-menu {
+#nav-top-menu .nav-top-menu {
     display: none;
 }
 
-.hide-mobile-link-container {
-    display: none;
-}
-.display-mobile-link-container {
-    display: block;
+#mobile-link-container {
+    background: white;
 }
 
+.mobile-nav-display {
+    display: none;
+}
 /* Style the hamburger menu */
 
 /*$height-icon: 12.5px;
