@@ -19,7 +19,6 @@
     <div class="content">
         <%- body %>
     <div/>
-    <br>
     <script src="dist/aos.js"></script>
     <script>
         // AOS.init();
@@ -44,10 +43,23 @@
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
         $( document ).ready(function() {
           var hamburger = $('#hamburger-icon');
+          var mobile_link_container = $('#mobile-link-container')
           hamburger.click(function() {
                 hamburger.toggleClass('active');
-                return true;
+                mobile_link_container.toggleClass('mobile-nav-display')
+                return false;
           });
+
+          for(var num=1;num<=5;num++) {
+            var link = $('#link'+num);
+            link.click(function() {
+                hamburger.toggleClass('active');
+                mobile_link_container.toggleClass('mobile-nav-display')
+                
+                return false;
+            });
+
+          }
         });
     </script>
 </body>
