@@ -47,8 +47,19 @@
           hamburger.click(function() {
                 hamburger.toggleClass('active');
                 mobile_link_container.toggleClass('mobile-nav-display')
-                return true;
+                return false;
           });
+
+          for(var num=1;num<=5;num++) {
+            var link = $('#link'+num);
+            link.click(function() {
+                hamburger.toggleClass('active');
+                mobile_link_container.toggleClass('mobile-nav-display')
+                
+                return false;
+            });
+
+          }
         });
     </script>
 </body>
