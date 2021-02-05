@@ -51,12 +51,13 @@ button, input {
 }
 .nav-link {
     display: block;
-    padding: 39px 0px 10px 0px;
+    /*padding: 39px 0px 10px 0px;*/
     color: #FF7251;
-    font-size: 15px;
+    font-size: 20px;
     text-align: left;
     font-weight: bold;
-    transition: 0.3s;
+    /*transition*/: 0.3s;
+    padding: 5px 0px 5px 0px;
 }
 .nav-link:hover {
     color: #207AEE; 
