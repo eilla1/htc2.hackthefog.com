@@ -51,12 +51,13 @@ button, input {
 }
 .nav-link {
     display: block;
-    padding: 39px 0px 10px 0px;
+    /*padding: 39px 0px 10px 0px;*/
     color: #FF7251;
-    font-size: 15px;
+    font-size: 20px;
     text-align: left;
     font-weight: bold;
-    transition: 0.3s;
+    /*transition*/: 0.3s;
+    padding: 5px 0px 5px 0px;
 }
 .nav-link:hover {
     color: #207AEE; 
@@ -102,8 +103,12 @@ ul {
 
 .mobile-nav-links {
     display: inline-block;
-    color: black;
-    left: 0
+    left: 0;
+    color: #FF4F0A;
+}
+
+.mobile-nav-links:hover {
+    color: #207AEE; 
 }
 
 .mobile-nav-menu {
@@ -120,6 +125,22 @@ ul {
     display: inline-block;
     width: 100%;
     text-align: center;
+    /*padding: 39px 0px 10px 0px;*/
+    color: #FF7251;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.mobile-reg-button {
+    color: white;
+    font-size: 12px;
+    background-color: #FF4F0A;
+    padding: 10px 30px;
+    border-radius: 5px;
+    z-index: 5;
+    margin-top: none;
 }
 
 #mobile-nav-htc-title {
