@@ -64,6 +64,10 @@
     color: #207AEE;
 }
 
+#about-container {
+    width: 100%;
+}
+
 @media screen and (max-width: 800px) {
     .column1 {
       width: 100%;
