@@ -63,6 +63,7 @@
     padding-left: 5px;
     color: #207AEE;
 }
+
 @media screen and (max-width: 800px) {
     .column1 {
       width: 100%;
