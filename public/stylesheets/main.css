@@ -14,7 +14,7 @@ html {
 body {
     
     padding-left: 258px;
-    background-color: white;
+    background-color: #282E36;
     font-size: 16px;
     line-height: 20px;
     display: inline-block;
@@ -56,16 +56,16 @@ button, input {
     font-size: 20px;
     text-align: left;
     font-weight: bold;
-    /*transition*/: 0.3s;
+    /* transition: 0.3s; */
     padding: 5px 0px 5px 0px;
 }
 .nav-link:hover {
-    color: #207AEE; 
+    color: #3B598B; 
 }
 
 .nav-menu {
     float: none;
-    background: #F7F9FC;
+    background: #282E36;
     border-style: none solid none none;
     border-right-width: 1px;
     border-color: gray;
@@ -89,7 +89,7 @@ ul {
 
 #nav-htc-title {
     text-align: center;
-    color: #207AEE;
+    color: #3B598B;
 }
 
 .mobile-navigation {
@@ -108,7 +108,7 @@ ul {
 }
 
 .mobile-nav-links:hover {
-    color: #207AEE; 
+    color: #3B598B; 
 }
 
 .mobile-nav-menu {
@@ -149,7 +149,7 @@ ul {
     margin-top: 17px;
     text-align: left;
     text-align: center;
-    color: #207AEE;
+    color: #3B598B;
 
 }
 
@@ -280,11 +280,4 @@ $translateX: 0;*/
 
 .route {
     padding: 5px;
-}
-footer {
-    padding: 5px;
-    color: white;
-}
-.footer {
-    background-color: #207AEE;
 }
