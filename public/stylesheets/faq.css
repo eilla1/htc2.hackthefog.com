@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .title {
-    color: #3B598B;
+    color: #3c77dd;
     font-size: 39px;
 }
 .column {
@@ -36,4 +36,5 @@
     padding-right: 50px;
     background: #282E36;
     background: linear-gradient(to bottom, #282E36 70%, #323841 100%);
+    color: #F0F4FF;
 }
