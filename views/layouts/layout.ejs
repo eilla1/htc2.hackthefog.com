@@ -54,10 +54,12 @@
 
           for(var num=1;num<=5;num++) {
             var link = $('#link'+num);
+            var href = link.href
+            var e = $(href)
             link.click(function() {
                 hamburger.toggleClass('active');
                 mobile_link_container.toggleClass('mobile-nav-display')
-                
+                e.scrollIntoView()
                 return false;
             });
 
