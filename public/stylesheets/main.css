@@ -1,7 +1,7 @@
 @import './shared/fonts.css';
 
 :root {
-    font-family: 'Source Sans Pro';
+    font-family: 'Anonymous Pro';
     font-size: 20px;
     
 }
@@ -113,7 +113,7 @@ ul {
 
 .mobile-nav-menu {
     display: none;
-    background: #F0F4FF;
+    background: #282E36;
     border-style: none solid none none;
     border-right-width: 1px;
     border-color: gray;
@@ -158,7 +158,7 @@ ul {
 }
 
 #mobile-link-container {
-    background: #F0F4FF;
+    background: #282E36;
     padding: none;
     z-index: 5;
 }
