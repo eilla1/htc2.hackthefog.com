@@ -26,6 +26,20 @@
 	padding-right: 15px;
 }
 
+.logo-img {
+	max-height:78px;
+	width: auto;
+	height: auto;
+	margin-bottom: 0px;
+	position: none;
+}
+
+#partner-logo {
+	color: #3c77dd;
+	font-size: 40px;
+	font-weight: bold;
+}
+
 #htc-intro {
 	color: #3c77dd;
 	font-size: 40px;
