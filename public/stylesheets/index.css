@@ -21,7 +21,9 @@
 }
 
 .banner-heading {
-
+	margin: 0;
+	padding-left: 15x;
+	padding-right: 15px;
 }
 
 #htc-intro {
