@@ -1,5 +1,5 @@
 # htc2.hackthefog.com
-This is the website for the Hack the Cloud 2.0 hackathon
+This is the website for the Hack the Cloud 2.0 hackathon.
 
 ## Install dependencies
 
