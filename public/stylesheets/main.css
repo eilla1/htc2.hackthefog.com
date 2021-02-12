@@ -250,6 +250,7 @@ $translateX: 0;*/
 .register-button {
     color: #F0F4FF;
     font-size: 12px;
+    font-family : inherit;
     background-color: #FF4F0A;
     padding: 10px 30px;
     border-radius: 5px;
