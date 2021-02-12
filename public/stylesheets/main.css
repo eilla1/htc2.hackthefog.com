@@ -188,7 +188,7 @@ $translateX: 0;*/
 
 .line {
     display:block;
-    background: black;
+    background: #F0F4FF;
     width:25px;
     height: 2px;
     position:absolute;
