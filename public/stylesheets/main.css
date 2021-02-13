@@ -279,8 +279,9 @@ $translateX: 0;*/
     .mobile-nav-menu {
         display: block;
     }
-
-
+    body {
+        width: 100%
+    }
 }
 
 .route {
