@@ -14,7 +14,7 @@ html {
 body {
     
     padding-left: 258px;
-    background-color: #282E36;
+    background-color: #272B30;
     font-size: 16px;
     line-height: 20px;
     display: inline-block;
@@ -52,7 +52,7 @@ button, input {
 .nav-link {
     display: block;
     /*padding: 39px 0px 10px 0px;*/
-    color: #FF7251;
+    color: #FF4F0A;
     font-size: 20px;
     text-align: left;
     font-weight: bold;
@@ -65,7 +65,7 @@ button, input {
 
 .nav-menu {
     float: none;
-    background: #282E36;
+    background: #272B30;
     border-style: none solid none none;
     border-right-width: 1px;
     border-color: gray;
@@ -113,7 +113,7 @@ ul {
 
 .mobile-nav-menu {
     display: none;
-    background: #282E36;
+    background: #272B30;
     border-style: none solid none none;
     border-right-width: 1px;
     border-color: gray;
@@ -126,7 +126,7 @@ ul {
     width: 100%;
     text-align: center;
     /*padding: 39px 0px 10px 0px;*/
-    color: #FF7251;
+    color: #FF4F0A;
     font-size: 15px;
     font-weight: bold;
     transition: 0.3s;
@@ -158,7 +158,7 @@ ul {
 }
 
 #mobile-link-container {
-    background: #282E36;
+    background: #272B30;
     padding: none;
     z-index: 5;
 }
@@ -249,10 +249,10 @@ $translateX: 0;*/
 
 .register-button {
     color: #F0F4FF;
-    font-size: 12px;
+    font-size: 16x;
     font-family : inherit;
     background-color: #FF4F0A;
-    padding: 10px 30px;
+    padding: 13px 30px;
     border-radius: 5px;
     z-index: 5;
     margin-top: 26px;
@@ -260,6 +260,10 @@ $translateX: 0;*/
 
 .register-button:hover {
     filter: brightness(85%);
+}
+
+#desk-top-register-button {
+    margin: 10px 63px 10px 63px;
 }
 
 
@@ -271,12 +275,15 @@ $translateX: 0;*/
     }
     body {
         padding-left: 0px;
+        padding-right: 0px
     }
     .mobile-nav-menu {
+        border-right-width: 0px;
         display: block;
     }
-
-
+    body {
+        width: 100%
+    }
 }
 
 .route {
