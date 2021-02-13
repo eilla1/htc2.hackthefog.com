@@ -275,8 +275,10 @@ $translateX: 0;*/
     }
     body {
         padding-left: 0px;
+        padding-right: 0px
     }
     .mobile-nav-menu {
+        border-right-width: 0px;
         display: block;
     }
     body {
