@@ -252,7 +252,7 @@ $translateX: 0;*/
     font-size: 16x;
     font-family : inherit;
     background-color: #FF4F0A;
-    padding: 10px 30px;
+    padding: 13px 30px;
     border-radius: 5px;
     z-index: 5;
     margin-top: 26px;
@@ -260,6 +260,10 @@ $translateX: 0;*/
 
 .register-button:hover {
     filter: brightness(85%);
+}
+
+#desk-top-register-button {
+    margin: 10px 63px 10px 63px;
 }
 
 
@@ -271,12 +275,15 @@ $translateX: 0;*/
     }
     body {
         padding-left: 0px;
+        padding-right: 0px
     }
     .mobile-nav-menu {
+        border-right-width: 0px;
         display: block;
     }
-
-
+    body {
+        width: 100%
+    }
 }
 
 .route {
