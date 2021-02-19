@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/main.css">
-    <link rel="stylesheet" href="/stylesheets/index.css">
-    <link rel="stylesheet" href="/stylesheets/faq.css">
-    <link rel="stylesheet" href="/stylesheets/about.css">
-    <link rel="stylesheet" href="/stylesheets/sponsors.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/schedule.css">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/timeline.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <title>Hack the Cloud 2.0</title>
-</head>
-<body>
-    <%- include('../partials/header.ejs') %>
-    <div class="content">
-        <%- body %>
-    <div/>
-    <script src="dist/aos.js"></script>
-    <script>
-        // AOS.init();
-        document.querySelector('html').classList.remove('no-js');
-            if (!window.Cypress) {
-            const scrollCounter = document.querySelector('.js-scroll-counter');
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="stylesheet" href="/stylesheets/index.css">
+        <link rel="stylesheet" href="/stylesheets/faq.css">
+        <link rel="stylesheet" href="/stylesheets/about.css">
+        <link rel="stylesheet" href="/stylesheets/sponsors.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/schedule.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/timeline.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <title>Hack the Cloud 2.0</title>
+    </head>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <div class="content">
+            <%- body %>
+        </div>
+        <script src="dist/aos.js"></script>
+        <script>
+			// AOS.init();
+			document.querySelector('html').classList.remove('no-js');
+			if(!window.Cypress) {
+				const scrollCounter = document.querySelector('.js-scroll-counter');
 
-            AOS.init({
-              mirror: true
-            });
+				AOS.init({
+					mirror: true
+				});
 
-            document.addEventListener('aos:in', function(e) {
-              console.log('in!', e.detail);
-            });
+				document.addEventListener('aos:in', function(e) {
+					console.log('in!', e.detail);
+				});
 
-            window.addEventListener('scroll', function() {
-              scrollCounter.innerHTML = window.pageYOffset;
-            });
-        }
-    </script>
-    <script type="text/javascript">
-        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-        $( document ).ready(function() {
-          var hamburger = $('#hamburger-icon');
-          var mobile_link_container = $('#mobile-link-container')
-          hamburger.click(function() {
-                hamburger.toggleClass('active');
-                mobile_link_container.toggleClass('mobile-nav-display')
-                return false;
-          });
+				window.addEventListener('scroll', function() {
+					scrollCounter.innerHTML = window.pageYOffset;
+				});
+			}
+        </script>
+        <script type="text/javascript">
+			/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+			$(document).ready(function() {
+				var hamburger = $('#hamburger-icon');
+				var mobile_link_container = $('#mobile-link-container')
+				hamburger.click(function() {
+					hamburger.toggleClass('active');
+					mobile_link_container.toggleClass('mobile-nav-display')
+					return false;
+				});
 
-          for(var num=1;num<=5;num++) {
-            var link = $('#link'+num);
-            var href = link.href
-            var e = $(href)
-            link.click(function() {
-                hamburger.toggleClass('active');
-                mobile_link_container.toggleClass('mobile-nav-display')
-                e.scrollIntoView()
-                return false;
-            });
-
-          }
-        });
-    </script>
-</body>
+				for(var num = 1; num <= 5; num++) {
+					var link = $('#link' + num);
+					var href = link.href
+					var e = $(href)
+					link.click(function() {
+						hamburger.toggleClass('active');
+						mobile_link_container.toggleClass('mobile-nav-display')
+						e.scrollIntoView()
+						return false;
+					});
+				}
+			});
+        </script>
+    </body>
 </html>
