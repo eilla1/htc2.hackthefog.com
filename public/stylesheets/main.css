@@ -54,6 +54,11 @@ ul {
 	margin: 0;
 }
 
+nav img {
+	display: inline-block;
+	padding: .5rem;
+}
+
 .desktop-nav {
 	position: fixed;
 	top: 0;
@@ -70,11 +75,6 @@ ul {
 	border-bottom: 1px solid #6A85A8;
 }
 
-nav img {
-	display: inline-block;
-	padding: .5rem;
-}
-
 .route {
 	padding: 0;
 	width: 100%;
@@ -83,10 +83,6 @@ nav img {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-}
-
-.route > a {
-
 }
 
 .nav-link {
@@ -133,11 +129,6 @@ nav img {
 	z-index: 10;
 }
 
-#nav-htc-title {
-	text-align: center;
-	color: #EEE;
-}
-
 .mobile-navigation {
 	position: fixed;
 	top: 0;
@@ -147,10 +138,16 @@ nav img {
 }
 
 .mobile-nav-links {
-	display: inline-block;
-	width: 90%;
-	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 2rem;
 	color: #EEE;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	transition: color .3s;
 }
 
 .mobile-nav-links:hover {
@@ -164,25 +161,19 @@ nav img {
 	z-index: 10;
 }
 
-.mobile-nav-links-index {
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	font-size: 15px;
-	font-weight: bold;
-	transition: 0.3s;
-	margin-bottom: 10px;
-}
-
 .mobile-reg-button {
 	width: 90%;
 	background-color: #EE700F;
 	color: #F0F4FF;
 	font-size: 12px;
-	margin-top: 0;
+	margin: 0 0 5px;
 	padding: 10px 30px;
 	border-radius: 5px;
 	z-index: 5;
+}
+
+.mobile-reg-button:hover {
+	background-color: #CE5E09;
 }
 
 #mobile-nav-menu-controls {
@@ -210,6 +201,9 @@ nav img {
 }
 
 #mobile-link-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	position: absolute;
 	top: 50px;
 	width: 100%;

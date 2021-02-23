@@ -10,14 +10,13 @@
 }
 
 .center-htc-title {
+	display: block;
 	position: relative;
 	top: 40%;
 	margin-bottom: 155px;
 	text-align: center;
-	color: rgba(0, 0, 0, 0.74);
-	font-size: 16px;
 	line-height: 40px;
-	display: block;
+	font-size: 16px;
 }
 
 span a {
@@ -55,11 +54,16 @@ span img {
 }
 
 #htc-intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: #207AEE;
 	font-size: 40px;
 	font-weight: bold;
-	margin-bottom: 20px;
-	position: relative;
+}
+
+#htc-intro > * {
+	padding: 0 .25rem;
 }
 
 #htc-name {
