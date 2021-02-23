@@ -88,11 +88,8 @@ span img {
 }
 
 footer {
-	padding: 5px;
-	text-align: center;
-	color: white;
-}
-
-.footer {
 	background-color: #2073DE;
+	padding: 5px;
+	color: white;
+	text-align: center;
 }

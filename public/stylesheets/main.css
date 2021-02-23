@@ -1,5 +1,13 @@
 @import "./shared/fonts.css";
 
+/*
+ * Blue Color Palette
+ * #207AEE - Blinding HTF Cloud Blue <Use in small elements and low text dosages>
+ * #347AD4 - Slightly Less Blinding Blue (Similar to HTF Cloud Blue) <Mainly Used in Nav>
+ * #6A85A8 - Dull Blue-Tone <Very Gray, Used in 1px borders>
+ * #72C3F3 - Hover Sky Blue <Used in Mobile Nav Hover. Pick a better color to replace it soon>
+ */
+
 :root {
 	font-family: GothamRounded, sans-serif;
 	font-size: 20px;
@@ -21,10 +29,14 @@ body {
 	height: 100%;
 }
 
+main {
+	height: 100%;
+}
+
 a {
-	font-size: inherit;
 	color: inherit; /* blue colors for links too */
-	text-decoration: inherit; /* no underline */
+	font-size: inherit;
+	text-decoration: inherit;
 }
 
 h1 { margin-top: 0; }
@@ -36,6 +48,10 @@ h4 { margin-top: 0; }
 button, input {
 	border: none;
 	cursor: pointer;
+}
+
+ul {
+	margin: 0;
 }
 
 .desktop-nav {
@@ -117,19 +133,6 @@ nav img {
 	z-index: 10;
 }
 
-/* .nav ul {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin: auto;
-} */
-
-ul {
-	margin: 0;
-}
-
 #nav-htc-title {
 	text-align: center;
 	color: #EEE;
@@ -151,14 +154,12 @@ ul {
 }
 
 .mobile-nav-links:hover {
-	color: #3B598B;
+	color: #72C3F3;
 }
 
 .mobile-nav-menu {
 	display: none;
 	background-color: #347AD4;
-	border-style: none solid none none;
-	border-color: gray;
 	border-radius: 0 0 2px 2px;
 	z-index: 10;
 }
@@ -167,7 +168,6 @@ ul {
 	display: inline-block;
 	width: 100%;
 	text-align: center;
-	/*padding: 39px 0px 10px 0px;*/
 	font-size: 15px;
 	font-weight: bold;
 	transition: 0.3s;
@@ -223,18 +223,6 @@ ul {
 #mobile-link-container.mobile-nav-display {
 	transform: translateY(-100%);
 }
-
-/* Style the hamburger menu */
-
-/*$height-icon: 12.5px;
-$width-line: 25px;
-$height-line: 2px;
-
-$transition-time: 0.4s;
-$rotation: 45deg;
-$translateY: ($height-icon / 2);
-$translateX: 0;*/
-
 
 #hamburger-icon {
 	width: 25px;
@@ -292,18 +280,13 @@ $translateX: 0;*/
 }
 
 #hamburger-icon a {
-	text-decoration: none;
-	color: #95A5A6;
-	margin: 0.5em 1.5em;
 	display: inline-block;
-}
-
-.content {
-	height: 100%;
+	text-decoration: none;
+	margin: 0.5em 1.5em;
 }
 
 .register-button {
-	color: #F0F4FF;
+	color: #F0F0FF;
 	font-size: 16px;
 	font-family: inherit;
 	background-color: #EE700F;
@@ -322,23 +305,13 @@ $translateX: 0;*/
 	border-radius: 0 0 7px 7px;
 }
 
-
-/* Hide side nav if mobile screen */
+/* Show dropdown nav for mobile and fixed nav for desktop */
 @media screen and (max-width: 800px) {
 	#nav-side-menu {
 		display: none;
 	}
 
-	body {
-		padding-left: 0;
-	}
-
 	.mobile-nav-menu {
-		border-right-width: 0;
 		display: block;
-	}
-
-	body {
-		width: 100%
 	}
 }
