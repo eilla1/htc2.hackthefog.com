@@ -19,22 +19,8 @@
 	font-size: 16px;
 }
 
-span a {
-	display: inline-block;
-	margin: 10px 10px 0 0;
-	padding: 5px 10px;
-}
-
-span img {
-	display: inline-block;
-	margin: 10px 10px 0 0;
-	padding: 5px 10px
-}
-
 .banner-heading {
 	margin: 0;
-	/* padding-left: 15x;
-	padding-right: 15px; */
 	overflow: hidden;
 	text-align: center;
 }
@@ -45,12 +31,6 @@ span img {
 	height: auto;
 	margin-bottom: 0;
 	position: unset;
-}
-
-#partner-logo {
-	color: #207AEE;
-	font-size: 40px;
-	font-weight: bold;
 }
 
 #htc-intro {
@@ -80,10 +60,9 @@ span img {
 	font-size: 20px;
 	font-weight: 600;
 	padding: 15px 35px;
-	/*border-style: none;*/
 }
 
-.imgcenter {
+.img-center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
