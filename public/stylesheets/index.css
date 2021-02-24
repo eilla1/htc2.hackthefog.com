@@ -60,10 +60,9 @@
 	font-size: 20px;
 	font-weight: 600;
 	padding: 15px 35px;
-	/*border-style: none;*/
 }
 
-.imgcenter {
+.img-center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
