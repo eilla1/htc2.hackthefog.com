@@ -1,4 +1,29 @@
 #sponsor-container {
-    background: linear-gradient(to bottom, #272B30 70%, #32373E 100%);
-	background: linear-gradient(to bottom, #272B30 39%, #32373E 100%);
+	background: none;
+	display: flex;
+	flex-direction: column;
+}
+
+#sponsors-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 1.5rem;
+}
+
+.sponsor-div {
+	margin: 0;
+	padding: 0 1rem;
+}
+
+.sponsor-div img {
+	margin: 0;
+	padding: 0;
+	max-height: 10rem;
+}
+
+#sponsor-interested {
+	align-self: center;
 }

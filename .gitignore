@@ -5,3 +5,5 @@ vercel.json
 npm-debug.log
 .DS_Store
 /*.env
+*.xml
+.idea/
