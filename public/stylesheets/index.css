@@ -1,4 +1,4 @@
-#home-screen {}
+#home {}
 
 .banner {
 	height: 100%;
@@ -66,7 +66,6 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 39%;
 	text-align: center;
 }
 
