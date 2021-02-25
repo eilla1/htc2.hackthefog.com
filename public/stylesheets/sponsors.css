@@ -1,10 +1,10 @@
-#sponsor-container {
+#sponsors {
 	background: none;
 	display: flex;
 	flex-direction: column;
 }
 
-#sponsors-list {
+.image-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -14,16 +14,32 @@
 }
 
 .sponsor-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-width: 30%;
+	max-width: 50%;
 	margin: 0;
-	padding: 0 1rem;
+	padding: .5rem;
 }
 
 .sponsor-div img {
+	max-width: 100%;
+	max-height: 10rem;
 	margin: 0;
 	padding: 0;
-	max-height: 10rem;
+}
+
+.allow-full-size {
+	max-width: 100%;
+}
+
+.allow-full-size img {
+	max-height: 7rem;
 }
 
 #sponsor-interested {
 	align-self: center;
+	text-align: center;
 }
