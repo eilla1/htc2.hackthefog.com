@@ -124,12 +124,6 @@ button {
 	border-radius: 3px;
 }
 
-#desk-top-register-button {
-	height: 100%;
-	padding: 0;
-	margin: 0;
-}
-
 /* Mobile Nav Styles */
 #mobile-nav-menu {
 	position: fixed;
@@ -267,21 +261,6 @@ button {
 
 .mobile-nav-links:hover {
 	color: #72C3F3;
-}
-
-#mobile-reg-button {
-	width: 90%;
-	margin: 0 0 5px;
-	padding: 10px 30px;
-	border-radius: 5px;
-	color: #F0F4FF;
-	font-size: 12px;
-	background-color: #EE700F;
-	z-index: 5;
-}
-
-#mobile-reg-button:hover {
-	background-color: #CE5E09;
 }
 
 /* Show dropdown nav for mobile and fixed nav for desktop */
