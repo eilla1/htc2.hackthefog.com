@@ -22,6 +22,11 @@
 	max-width: 50%;
 	margin: 0;
 	padding: .5rem;
+	transition: transform .25s;
+}
+
+.sponsor-div:hover {
+	transform: scale(1.2);
 }
 
 .sponsor-div img {
