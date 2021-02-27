@@ -37,9 +37,7 @@
 }
 
 .container {
-	padding-top: 1px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding: 1.5rem 50px 0;
 	background-color: #D3DDE9;
 }
 
