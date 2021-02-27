@@ -82,8 +82,8 @@ button {
 	align-items: center;
 	width: 100%;
 	height: 2.5rem;
-	background-color: #C7D9EA;
-	border-bottom: 1px solid #6A85A8;
+	padding: 0 .5rem;
+	background-color: #C7D9EAAA;
 	transition: 0.5s;
 	z-index: 10;
 }
@@ -91,8 +91,8 @@ button {
 #partner-logo {
 	display: inline-block;
 	overflow: hidden;
-	max-height: 78px;
-	padding: .5rem;
+	height: 100%;
+	padding: 0;
 }
 
 #routes {
@@ -118,33 +118,16 @@ button {
 	transition: 0.3s;
 }
 
-.nav-link:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 3px;
-	bottom: 0;
-	left: 0;
-	background-color: #207AEE;
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.3s ease-in-out;
-}
-
 .nav-link:hover {
 	color: #D3DDE9;
 	background-color: #207AEE;
-	border-radius: 10px;
-}
-
-.nav-link:hover:before {
-	visibility: visible;
-	transform: scaleX(1);
+	border-radius: 3px;
 }
 
 #desk-top-register-button {
-	margin: 0 1rem;
-	border-radius: 0 0 7px 7px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 /* Mobile Nav Styles */
@@ -155,7 +138,7 @@ button {
 	width: 100%;
 	height: 50px;
 	display: none;
-	background-color: #347AD4;
+	/*background-color: #347AD4;*/
 	border-radius: 0 0 2px 2px;
 	z-index: 10;
 }
@@ -178,6 +161,24 @@ button {
 	margin: 0 0 0 10px;
 	text-align: center;
 	color: #D6DFE8;
+	transition: opacity .75s;
+	opacity: 1;
+	cursor: none;
+}
+
+#mobile-nav-htc-title.mobile-nav-hide-title {
+	opacity: 0;
+}
+
+#hamburger-icon-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #347AD4;
+	border-radius: 0 0 0 .1rem;
+	padding: 12.5px;
+	width: 50px;
+	height: 50px;
 }
 
 #hamburger-icon {
@@ -185,7 +186,6 @@ button {
 	height: 12.5px;
 	position: relative;
 	display: block;
-	margin: 19px 10px 17.5px 0;
 }
 
 .line {
@@ -240,10 +240,10 @@ button {
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	top: 50px;
+	top: 0;
 	width: 100%;
 	padding: 0;
-	border-radius: 0 0 10px 10px;
+	border-radius: 0 0 3px 3px;
 	transition: transform .5s;
 	background-color: #347AD4;
 	z-index: 0;
