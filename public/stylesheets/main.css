@@ -248,6 +248,7 @@ button {
 .mobile-nav-display {
 	transform: translateY(-100%);
 }
+
 .mobile-nav-links {
 	display: flex;
 	flex-direction: column;
