@@ -132,7 +132,9 @@
 			}
 
 			/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-			window.addEventListener('DOMContentLoaded', event => {
+			let initDone = false;
+			function initDropDown() {
+				if(initDone) return;
 				const hamburger = document.getElementById('hamburger-icon');
 				const mobile_link_container = document.getElementById('mobile-link-container');
 				const mobile_nav_text = document.getElementById('mobile-nav-htc-title');
@@ -158,7 +160,11 @@
 						return true;
 					});
 				}
-			});
+				init = true;
+			};
+
+			window.addEventListener("DOMContentLoaded", initDropDown);
+			window.addEventListener("load", initDropDown);
         </script>
     </body>
 </html>
