@@ -292,7 +292,7 @@ button {
 	float: right;
 	width: 100%;
 	height: 169px;
-	background-image: url(https://rafael.sirv.com/hackthefog/news-card.jpg);
+	background-image: url(https://rafael.sirv.com/hackthefog/news-card.jpg?format=webp&webp.fallback=jpg);
 	background-position: center center;
 	background-size: auto, cover;
 	background-repeat: no-repeat;
