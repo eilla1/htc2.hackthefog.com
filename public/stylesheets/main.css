@@ -61,11 +61,6 @@ ul {
 	margin: 0;
 }
 
-button {
-	border: none;
-	cursor: pointer;
-}
-
 .register-button {
 	color: #F0F0FF;
 	font-size: 16px;
@@ -103,6 +98,7 @@ button {
 	overflow: hidden;
 	height: 100%;
 	padding: 0;
+	margin-right: .5rem;
 }
 
 #routes {
@@ -340,6 +336,7 @@ button {
 	color: #303030;
 	font-size: 39px;
 	line-height: 29px;
+	text-align: center;
 	margin: 0;
 	padding: 2rem 0;
 }
@@ -366,7 +363,7 @@ button {
 
 .container {
 	padding: 1.5rem 50px 0;
-	background-color: #D3DDE9;
+	background-color: white;
 }
 
 /* Timeline.css */
@@ -490,7 +487,6 @@ h1 {
 
 /* Sponsors.css */
 #sponsors {
-	background: none;
 	display: flex;
 	flex-direction: column;
 }
@@ -501,7 +497,8 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 0 1.5rem;
+	padding: 1rem 1.5rem;
+	overflow: hidden;
 }
 
 .sponsor-div {
