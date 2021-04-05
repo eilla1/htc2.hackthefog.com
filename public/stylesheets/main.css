@@ -57,6 +57,11 @@ a {
 	text-decoration: inherit;
 }
 
+.highlight-link {
+	color: #207AEE;
+	text-decoration: underline;
+}
+
 ul {
 	margin: 0;
 }
@@ -532,7 +537,7 @@ h1 {
 	max-height: 7rem;
 }
 
-#sponsor-interested {
+.sponsor-interested {
 	align-self: center;
 	text-align: center;
 }
