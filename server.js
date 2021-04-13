@@ -35,5 +35,8 @@ app.get('/schedule', (req, res) => {
 app.get('/sponsors', (req, res) => {
 	return res.render('sponsors');
 });
+app.get('/register', (req, res) => {
+	return res.redirect('https://event.hackhub.com/event/htc2');
+});
 
 app.listen(process.env.PORT || 3000);
