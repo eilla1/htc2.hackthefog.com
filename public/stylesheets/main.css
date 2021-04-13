@@ -57,13 +57,13 @@ a {
 	text-decoration: inherit;
 }
 
-ul {
-	margin: 0;
+.highlight-link {
+	color: #207AEE;
+	text-decoration: underline;
 }
 
-button {
-	border: none;
-	cursor: pointer;
+ul {
+	margin: 0;
 }
 
 .register-button {
@@ -103,6 +103,7 @@ button {
 	overflow: hidden;
 	height: 100%;
 	padding: 0;
+	margin-right: .5rem;
 }
 
 #routes {
@@ -339,9 +340,10 @@ button {
 .title {
 	color: #303030;
 	font-size: 39px;
-	line-height: 29px;
+	line-height: 2rem;
+	text-align: center;
 	margin: 0;
-	padding: 2rem 0;
+	padding: 2rem 0 1rem;
 }
 
 .column {
@@ -366,7 +368,7 @@ button {
 
 .container {
 	padding: 1.5rem 50px 0;
-	background-color: #D3DDE9;
+	background-color: white;
 }
 
 /* Timeline.css */
@@ -490,7 +492,6 @@ h1 {
 
 /* Sponsors.css */
 #sponsors {
-	background: none;
 	display: flex;
 	flex-direction: column;
 }
@@ -502,6 +503,7 @@ h1 {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 0 1.5rem;
+	overflow: hidden;
 }
 
 .sponsor-div {
@@ -532,10 +534,10 @@ h1 {
 }
 
 .allow-full-size img {
-	max-height: 7rem;
+	max-height: 5rem;
 }
 
-#sponsor-interested {
+.sponsor-interested {
 	align-self: center;
 	text-align: center;
 }
