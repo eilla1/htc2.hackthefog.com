@@ -503,7 +503,7 @@ h1 {
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 0 1.5rem;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .sponsor-div {
@@ -511,30 +511,48 @@ h1 {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	min-width: 30%;
-	max-width: 50%;
+	width: 100%;
 	margin: 0;
-	padding: .5rem;
+	padding: .75rem;
 	transition: transform .25s;
 }
 
 .sponsor-div:hover {
-	transform: scale(1.2);
+	transform: scale(1.15);
 }
 
 .sponsor-div img {
-	max-width: 100%;
-	max-height: 10rem;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
-.allow-full-size {
-	max-width: 100%;
+@media only screen and (min-width: 481px) {
+	/* Tablets and iPads */
+	.sponsor-div {
+		width: 50%;
+	}
 }
 
-.allow-full-size img {
-	max-height: 5rem;
+@media only screen and (min-width: 769px) {
+	/* Small Screens */
+	.sponsor-div {
+		width: 33%;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	/* Small Screens */
+	.sponsor-div {
+		/*width: 25%;*/
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	/* Large Screens */
+	.sponsor-div {
+		width: 25%;
+	}
 }
 
 .sponsor-interested {
