@@ -494,6 +494,7 @@ h1 {
 #prize-list > div {
 	width: 100%;
 	max-width: 769px;
+	padding: 0 1rem;
 }
 
 .prize-category {
@@ -502,11 +503,6 @@ h1 {
 
 .prize-desc {
 	margin-top: 0;
-}
-
-.prize-desc a {
-	text-decoration: underline;
-	color: #347AD4;
 }
 
 /* Sponsors.css */
@@ -547,6 +543,10 @@ h1 {
 	padding: 0;
 }
 
+.partner-div img {
+	width: min(max(50%, 500px), 100%);
+}
+
 @media only screen and (min-width: 481px) {
 	/* Tablets and iPads */
 	.sponsor-div {
@@ -570,7 +570,7 @@ h1 {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 	}
 }
 
