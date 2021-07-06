@@ -490,6 +490,25 @@ h1 {
 	box-shadow: 0 0 0 3px #86B0DA;
 }
 
+/* Prizes.css */
+#prize-list > div {
+	width: 100%;
+	max-width: 769px;
+}
+
+.prize-category {
+	margin-bottom: 0;
+}
+
+.prize-desc {
+	margin-top: 0;
+}
+
+.prize-desc a {
+	text-decoration: underline;
+	color: #347AD4;
+}
+
 /* Sponsors.css */
 #sponsors {
 	display: flex;
@@ -539,6 +558,19 @@ h1 {
 	/* Small Screens */
 	.sponsor-div {
 		width: 33%;
+	}
+
+	#prize-list > div {
+		width: 50%;
+		max-width: 100%;
+	}
+
+	#prize-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
