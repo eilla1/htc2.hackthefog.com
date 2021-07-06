@@ -1,11 +1,11 @@
 {
   "name": "hackthecloud2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Homepage for Hack the Cloud 2.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "devStart": "nodemon server.js"
+    "start": "node .",
+    "devStart": "nodemon . --watch \"js,css,html,ejs\""
   },
   "keywords": [],
   "author": "",
