@@ -505,6 +505,60 @@ h1 {
 	margin-top: 0;
 }
 
+/* Schedule.css */
+.schedule-all {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 0 1rem;
+}
+
+.schedule-day {
+	display: flex;
+	flex-direction: column;
+	padding: 0 .5rem;
+	margin: 1rem 0;
+}
+
+.schedule-date {
+	width: fit-content;
+	margin: 0;
+	padding: 8px 16px;
+	border-radius: 18px;
+	background-color: #207AEE;
+	box-shadow: 0 0 0 3px #86b0da;
+	color: white;
+	font-size: 14px;
+}
+
+.schedule-date h4 {
+	margin: 0;
+}
+
+.schedule-content {
+	padding: .5rem .25rem;
+	border-left: 2px solid #6A85A8;
+}
+
+.schedule-entry {
+	/*border-left: 2px solid #6A85A8;*/
+	padding: .5rem 0 .5rem .25rem;
+	margin: .2rem 0;
+}
+
+.schedule-entry-label {
+	margin: 0;
+	color: #5FABF7;
+}
+
+.schedule-entry-time {
+	color: #207AEE;
+}
+
+.schedule-entry-desc {
+	margin: .2rem 0;
+}
+
 /* Sponsors.css */
 #sponsors {
 	display: flex;
@@ -571,6 +625,11 @@ h1 {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: flex-start;
+	}
+
+	.schedule-all {
+		flex-direction: row;
+		justify-content: space-between;
 	}
 }
 
