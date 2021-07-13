@@ -152,8 +152,7 @@
 					return false;
 				});
 
-				for(let num = 1; num <= 5; num++) {
-					const link = document.querySelector('#link' + num);
+				for(const link of document.querySelectorAll(".mobile-nav-links")) {
 					link.addEventListener('click', () => {
 						hamburger.classList.remove('active');
 						mobile_nav_text.classList.add('mobile-nav-hide-title');
