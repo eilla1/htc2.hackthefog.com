@@ -2,24 +2,13 @@
   "name": "hackthecloud2",
   "version": "1.0.0",
   "description": "Homepage for Hack the Cloud 2.0",
-  "main": "server.js",
   "scripts": {
-    "start": "node .",
+    "start": "npx http-server -c-1 -p 3000",
     "dev": "nodemon . --ext \"js,css,html,ejs\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.0",
-    "mongoose": "^5.11.9",
-    "package.json": "^2.0.1"
-  },
-  "engines": {
-    "node": "10.x"
-  },
   "devDependencies": {
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.6"

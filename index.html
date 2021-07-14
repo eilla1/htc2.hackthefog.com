@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Hack The Cloud Fog Hackathon San Francisco Bay Area High School Youth Programming Computer Science Coding CS Workshops Learning Free Event HTC HTF MissionBit Non Profit">
+		<meta name="description" content="Hack the Cloud 2.0 is back for our second online hackathon on July 10th 2021">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+		<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="https://rafael.sirv.com/hackthefog/logo.png?w=32&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="64x64" href="https://rafael.sirv.com/hackthefog/logo.png?w=64&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="96x96" href="https://rafael.sirv.com/hackthefog/logo.png?w=96&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="100x100" href="https://rafael.sirv.com/hackthefog/logo.png?w=100&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="200x200" href="https://rafael.sirv.com/hackthefog/logo.png?w=200&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="300x300" href="https://rafael.sirv.com/hackthefog/logo.png?w=300&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="400x400" href="https://rafael.sirv.com/hackthefog/logo.png?w=400&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="500x500" href="https://rafael.sirv.com/hackthefog/logo.png?w=500&png.optimize=true">
+		<link rel="alternate icon" href="https://rafael.sirv.com/hackthefog/favicon.ico">
+
+		<!-- Apple Icon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="https://rafael.sirv.com/hackthefog/logo.png?w=57&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="60x60" href="https://rafael.sirv.com/hackthefog/logo.png?w=60&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://rafael.sirv.com/hackthefog/logo.png?w=72&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://rafael.sirv.com/hackthefog/logo.png?w=76&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://rafael.sirv.com/hackthefog/logo.png?w=114&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://rafael.sirv.com/hackthefog/logo.png?w=120&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://rafael.sirv.com/hackthefog/logo.png?w=144&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://rafael.sirv.com/hackthefog/logo.png?w=152&png.optimize=true">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://rafael.sirv.com/hackthefog/logo.png?w=180&png.optimize=true">
+
+		<!-- Android Icon -->
+		<link rel="icon" type="image/png" sizes="36x36" href="https://rafael.sirv.com/hackthefog/logo.png?w=36&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="48x48" href="https://rafael.sirv.com/hackthefog/logo.png?w=48&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="72x72" href="https://rafael.sirv.com/hackthefog/logo.png?w=72&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="96x96" href="https://rafael.sirv.com/hackthefog/logo.png?w=96&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="144x144" href="https://rafael.sirv.com/hackthefog/logo.png?w=144&png.optimize=true">
+		<link rel="icon" type="image/png" sizes="192x192" href="https://rafael.sirv.com/hackthefog/logo.png?w=192&png.optimize=true">
+
+		<!-- Title -->
+		<title>Hack the Cloud 2.0</title>
+
+		<!-- Facebook -->
+		<meta property="og:url" content="https://www.hackthefog.com">
+		<meta property="og:image" content="https://rafael.sirv.com/hackthefog/logo.png">
+		<meta property="og:description" content="Hack the Cloud 2.0 is back for our second online hackathon on July 10th 2021">
+		<meta property="og:title" content="Hack the Cloud 2.0">
+		<meta property="og:site_name" content="Hack the Cloud 2.0">
+		<meta property="og:see_also" content="https://www.hackthefog.com">
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="Hack the Cloud 2.0">
+		<meta name="twitter:url" content="https://www.hackthefog.com">
+		<meta name="twitter:title" content="Hack the Cloud 2.0">
+		<meta name="twitter:description" content="Hack the Cloud 2.0 is back for our second online hackathon on July 10th 2021">
+		<meta name="twitter:image" content="https://rafael.sirv.com/hackthefog/logo.png">
+		<!-- Google+ -->
+		<meta itemprop="name" content="Hack the Cloud 2.0">
+		<meta itemprop="description" content="Hack the Cloud 2.0 is back for our second online hackathon on July 10th 2021">
+		<meta itemprop="image" content="https://rafael.sirv.com/hackthefog/logo.png">
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Hackathon",
+				"name": "Hack the Cloud 2.0",
+				"alternateName": "HTC 2.0",
+				"startDate": "2021-07-10T16:00Z",
+				"endDate": "2021-07-12T7:00Z",
+				"eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+				"eventStatus": "https://schema.org/EventScheduled",
+				"location": {
+					"@type": "VirtualLocation",
+					"url": "https://event.hackhub.com/event/htc2"
+				},
+				"about": "Hack the Cloud 2.0 is an online hackathon for all high school students",
+				"inLanguage": {
+					"@type": "Language",
+					"name": "English",
+					"alternateName": "en"
+				},
+				"isAccessibleForFree": true,
+				"image": "https://rafael.sirv.com/hackthefog/logo.png",
+				"description": "Online Hackathon for high school students",
+				"offers": {
+					"@type": "Offer",
+					"url": "https://event.hackhub.com/event/htc2",
+					"price": "0",
+					"priceCurrency": "USD",
+					"availability": "https://schema.org/OnlineOnly",
+					"validFrom": "2021-03-01T0:00Z",
+					"validThrough": "2021-07-12T7:00Z"
+				},
+				"organizer": {
+					"@type": "Organization",
+					"name": "Hack the Fog",
+					"url": "https://www.hackthefog.com",
+					"aggregateRating": {
+						"@type": "AggregateRating",
+						"ratingValue": "5",
+						"reviewCount": "20"
+					},
+					"email": "contact@hackthefog.com",
+					"foundingDate": "2017-09-10",
+					"slogan": "Working to host hackathons for all high school students in San Francisco",
+					"description": "Non-profit which hosted the first high school hackathon in San Francisco",
+					"image": "https://rafael.sirv.com/hackthefog/logo.png",
+					"logo": "https://rafael.sirv.com/hackthefog/logo.png"
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<nav role="navigation" id="desktop-nav">
+					<img id="partner-logo" alt="Hack the Cloud" src="https://rafael.sirv.com/hackthefog/logo.svg">
+					<div id="routes">
+						<a href="#home" class="nav-link"><span>Home</span></a>
+						<a href="#about" class="nav-link"><span>About</span></a>
+						<a href="#faq" class="nav-link"><span>FAQ</span></a>
+						<a href="#prizes" class="nav-link"><span>Prizes</span></a>
+						<a href="#schedule" class="nav-link"><span>Schedule</span></a>
+						<a href="#team" class="nav-link"><span>Our Team</span></a>
+						<a href="#sponsors" class="nav-link"><span>Sponsors</span></a>
+						<a href="https://htc2.devpost.com/" class="nav-link"><span>Register</span></a>
+					</div>
+				</nav>
+			</div>
+			<div>
+				<nav role="navigation" id="mobile-nav-menu">
+					<div id="mobile-nav-menu-controls">
+						<h2 id="mobile-nav-htc-title" class="mobile-nav-hide-title">HTC 2.0</h2>
+						<div id="hamburger-icon-wrapper">
+							<a id="hamburger-icon" href="#" title="Menu">
+								<span class="line" id="line-1"></span>
+								<span class="line" id="line-2"></span>
+								<span class="line" id="line-3"></span>
+							</a>
+						</div>
+					</div>
+					<div id="mobile-link-container" class="mobile-nav-display">
+						<div class="mobile-nav-links"></div>
+						<a href="#home" class="mobile-nav-links"><span>Home</span></a>
+						<a href="#about" class="mobile-nav-links"><span>About</span></a>
+						<a href="#faq" class="mobile-nav-links"><span>FAQ</span></a>
+						<a href="#prizes" class="mobile-nav-links"><span>Prizes</span></a>
+						<a href="#schedule" class="mobile-nav-links"><span>Schedule</span></a>
+						<a href="#team" class="mobile-nav-links"><span>Our Team</span></a>
+						<a href="#sponsors" class="mobile-nav-links"><span>Sponsors</span></a>
+						<a href="https://htc2.devpost.com/" class="mobile-nav-links"><span>Register Now</span></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main class="content">
+			<div id="home" class="banner">
+				<div id="center-htc-title">
+					<div id="htc-intro">
+						<img class="logo-img htc-image" alt="Mission Bit" src="/img/missionbit.svg">
+						<span>+</span>
+						<img class="logo-img htc-image" alt="Hack the Cloud" src="https://rafael.sirv.com/hackthefog/logo.svg">
+					</div>
+					<span>present</span>
+					<br>
+					<span id="htc-name">Hack the Cloud 2.0</span>
+					<div id="banner-button-wrapper">
+						<a class="register-button" id="banner-button" href="https://htc2.devpost.com/">Register Now</a>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div id="about" class="container">
+					<h2 class="title">About us</h2>
+					<div class="row">
+						<div class="timeline">
+							<ul>
+								<li>
+									<div class="desc-content">
+										<h3>Launch</h3>
+										<p>On March 3rd, we ran San Francisco's first high school hackathon. It was an accessible event for high school students in the Bay Area. We saw various hacks ranging from simple websites to mobile applications and VR. Our success was featured in the San Francisco Chronicle.</p>
+									</div>
+									<div class="time">
+										<h4>March 2018</h4>
+									</div>
+									<a href="https://www.sfchronicle.com/bayarea/article/Hack-the-Fog-makes-history-as-San-12729895.php" class="data-aos">
+										<div class="column2 data-aos" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<div class="desc-content">
+										<h3>Migrating to the Cloud</h3>
+										<p>In July 2020, the organization launched our first online hackathon, Hack the Cloud. Although our initial target was Bay Area high school students, we scaled our outreach, reaching students across the world from places such as Canada, South Africa, Europe and India.</p>
+									</div>
+									<div class="time">
+										<h4>July 2020</h4>
+									</div>
+								</li>
+
+								<li>
+									<div class="desc-content">
+										<h3>We're Back Again!!!</h3>
+										<p>This year we're back and better than ever. Join us and become part of an exciting hacking community where anyone can learn to program. If you're the advanced programmer or the beginner, we have something for all of you. Hack on!</p>
+									</div>
+									<div class="time">
+										<h4>~July 2021</h4>
+									</div>
+								</li>
+							</ul>
+							<div style="clear: both;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div class="container" id="faq">
+					<h2 class="title">Frequently asked questions</h2>
+					<div class="row data-aos">
+						<div class="column data-aos" data-aos="fade-up" data-aos-easing="ease-out-cubic ease-in-cubic" data-aos-duration="1000" data-aos-offset="50">
+							<h4>What is a virtual hackathon?</h4>
+							<div>
+								<p>A virtual hackathon is an online event where high schoolers can learn, program and have fun. It will still have lots of the good stuff a physical hackathon has such as prizes and workshops.</p>
+							</div>
+						</div>
+						<div class="column data-aos" data-aos="fade-up" data-aos-data-aos-easing="ease-out-cubic ease-in-cubic" data-aos-duration="1000" data-aos-offset="50">
+							<h4>What if I don’t know how to code? Can I still attend?</h4>
+							<div>
+								<p>We love beginners at Hack the Cloud 2.0. We’ll have a plethora of workshops hosted by coders at several tech companies and startups in the Bay Area where you can learn skills people actually use in the industry. Have an idea but don’t know where to start? Our experienced staff and mentors will help guide you! DM us in the Discord or email us contact@hackthefog.com!</p>
+							</div>
+						</div>
+					</div>
+					<div class="row data-aos">
+						<div class="column data-aos" data-aos="fade-up" data-aos-easing="ease-out-cubic ease-in-cubic" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="10">
+							<h4>How do I sign up?</h4>
+							<div>
+								<p>Click the “Register” button on our home page to register on our Devpost! You will receive an email once you’ve been accepted, and you’ll get important announcements such as reminders, access to our Discord, and other stuff.</p>
+							</div>
+						</div>
+						<div class="column data-aos" data-aos="fade-up" data-aos-easing="ease-out-cubic ease-in-cubic" data-aos-duration="1000" data-aos-delay="300" data-aos-offset="10">
+							<h4>I don’t know any other hackers/coders...</h4>
+							<div>
+								<p>Hack the Cloud 2.0 is a great chance to meet people like you who want to get into tech! Other than our Discord, where you can chat with people who will be attending the event, you can also use Devpost's built-in feature to find people who are looking for a team and connect with them.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row data-aos">
+						<div class="column data-aos" data-aos="fade-up" data-aos-easing="ease-out-cubic ease-in-cubic" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="50">
+							<h4>What are the rules if I want to submit a project?</h4>
+							<div>
+								<p>Hacks must be made by groups of up to four people, no more. Other than pre-made external libraries and tools, the code can only be made during the event. The project must be posted on Devpost before the end of the second day of the hackathon (July 12th 12 am PDT).</p>
+								<p>Other than the above rules, you’re free to do whatever you want as long as you use common sense - don’t make things that would potentially hurt people in any way. Hack for good!</p>
+							</div>
+						</div>
+						<div class="column data-aos" data-aos="fade-up" data-aos-easing="ease-out-cubic ease-in-cubic" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="50">
+							<h4>I have a different question</h4>
+							<div>
+								<p>Shoot us an email at <a class="highlight-link" href="mailto:contact@hackthefog.com">contact@hackthefog.com</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div id="prizes" class="prize-container container">
+					<h2 class="title">Prizes</h2>
+					<div id="prize-list">
+						<div>
+							<p class="prize-category"><b>First Place</b></p>
+							<p class="prize-desc">
+								Raycon: Noise Cancelling<br>
+								Wolfram|One: Personal Edition + 1-Year Subscription to Wolfram|Alpha Pro<br>
+								<i>(One prize for each team member)</i>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Second Place</b></p>
+							<p class="prize-desc">
+								HyperX: Gaming Keyboard<br>
+								Wolfram|One: Personal Edition + 1-Year Subscription to Wolfram|Alpha Pro<br>
+								<i>(One prize for each team member)</i>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Third Place</b></p>
+							<p class="prize-desc">
+								Amazon: $50 Gift Card<br>
+								Wolfram|One: Personal Edition + 1-Year Subscription to Wolfram|Alpha Pro<br>
+								<i>(One prize for each team member)</i>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Fourth Place</b></p>
+							<p class="prize-desc">
+								Taskade: Lifetime Upgrade<br>
+								Wolfram|One: Personal Edition + 1-Year Subscription to Wolfram|Alpha Pro<br>
+								<i>(One prize for each team member)</i>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Fifth Place</b></p>
+							<p class="prize-desc">
+								AoPS: $125 Credit<br>
+								Wolfram|One: Personal Edition + 1-Year Subscription to Wolfram|Alpha Pro<br>
+								<i>(One prize for each team member)</i>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Sixth-Twelfth Place</b></p>
+							<p class="prize-desc">
+								Wolfram|One: Personal Edition + 1-Year Subscription to Wolfram|Alpha Pro<br>
+								<i>(One prize for each team member)</i>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>All Participants</b></p>
+							<p class="prize-desc">
+								Taskade: 1-Year Free Upgrade<br>
+								Wolfram|One: 30-Day Access<br>
+								Repl.it: Hacker Plan 1-Month Access<br>
+								Sashido: $120 Credits<br>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Best Design</b></p>
+							<p class="prize-desc">
+								Various Free Swag<br>
+								Possible prizes are stickers, shirts, comics, etc.
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Best Beginner</b></p>
+							<p class="prize-desc">
+								1Password: Family 6-Month Subscription<br>
+								Angela Sun Consulting: SAT & ACT Test Prep<br>
+								Wolfram|One: Personal Edition + 1-Year Subscription to Wolfram|Alpha Pro<br>
+								<i>(One prize for each team member)</i>
+							</p>
+						</div>
+						<div>
+							<p class="prize-category"><b>Sasido Prize</b></p>
+							<p class="prize-desc">
+								Machine Learning Challenge: Participants can register for SasiDo's 45-day free trial and freely create a project with Machine Learning and SashiDo.<br>
+								Partipants must create a short overview of the project, the tech used, post to <a class="highlight-link" href="https://dev.to/">DEV Community</a>, and submit the link to <a class="highlight-link" href="mailto:hello@sasido.io">hello@sashido.io</a> for review.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div id="schedule" class="schedule-container container">
+					<h2 class="title">Schedule</h2>
+					<div class="schedule-all">
+						<div class="schedule-day">
+							<div class="schedule-date">
+								<h4>Saturday, July 10</h4>
+							</div>
+							<div class="schedule-content">
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">9:00 AM</span> Opening Ceremony</h3>
+									<p class="schedule-entry-desc">Opening ceremony for the day</p>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">12:00 PM</span> Lunch Break</h3>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">1:00 PM</span> Workshop: Design Your Own Business</h3>
+									<p>Hosted by Brian Thiebaud from MissionBit</p>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">1:00 PM</span> Workshop: Design Your Own Business</h3>
+									<p class="schedule-entry-desc">From 1:00PM to 2:30PM Hosted by Brian Thiebaud from MissionBit</p>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">3:00 PM</span> Workshop: Intro to Website Development</h3>
+									<p class="schedule-entry-desc">From 3:00PM to 3:30PM</p>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">5:00 PM</span> Workshop: Postman API</h3>
+									<p class="schedule-entry-desc">From 5:00PM to 6:00PM</p>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">7:00 PM</span> Dinner</h3>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">8:00 PM</span> End of Activities for the Day</h3>
+								</div>
+							</div>
+						</div>
+
+						<div class="schedule-day">
+							<div class="schedule-date">
+								<h4>Sunday, July 11</h4>
+							</div>
+							<div class="schedule-content">
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">9:00 AM</span> Morning Check-in</h3>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">12:00 PM</span> Lunch Break</h3>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">3:00 PM</span> Workshop: Spark AR</h3>
+									<p class="schedule-entry-desc">From 3:00PM to 4:30PM Hosted by Lilian Emelife and Tara Tiong from MissionBit</p>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">4:30 PM</span> Break</h3>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">6:30 PM</span> Break</h3>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">7:00 PM</span> Dinner</h3>
+								</div>
+
+								<div class="schedule-entry">
+									<h3 class="schedule-entry-label"><span class="schedule-entry-time">11:59 PM</span> Submission Deadline</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div id="team" class="container">
+					<h2 class="title">Our Team</h2>
+					<div class="team-group-div">
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Rafael Cenzano.jpg" alt="Rafael Cenzano" class="team-member-image">
+							</div>
+							<p class="team-member-name">Rafael Cenzano</p>
+							<p class="team-member-desc">Director</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Joshua Pan.jpg" alt="Joshua Pan" class="team-member-image">
+							</div>
+							<p class="team-member-name">Joshua Pan</p>
+							<p class="team-member-desc">External Team Leader</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Cappillen Lee.jpg" alt="Cappillen Lee" class="team-member-image">
+							</div>
+							<p class="team-member-name">Cappillen Lee</p>
+							<p class="team-member-desc">Internal Team Leader</p>
+						</div>
+					</div>
+					<div class="team-group-div">
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Emily Yip.jpg" alt="Emily Yip" class="team-member-image">
+							</div>
+							<p class="team-member-name">Emily Yip</p>
+							<p class="team-member-desc">Social Media Manager</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Marvin Lee.jpg" alt="Marvin Lee" class="team-member-image">
+							</div>
+							<p class="team-member-name">Marvin Lee</p>
+							<p class="team-member-desc">Website Manager</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Sean Wong.jpg" alt="Sean Wong" class="team-member-image">
+							</div>
+							<p class="team-member-name">Sean Wong</p>
+							<p class="team-member-desc">Graphic Designer</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Lianne de Leon.jpg" alt="Lianne de Leon" class="team-member-image">
+							</div>
+							<p class="team-member-name">Lianne de Leon</p>
+							<p class="team-member-desc">Graphic Designer</p>
+						</div>
+					</div>
+					<div class="team-group-div">
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Carmen Li.jpg" alt="Carmen Li" class="team-member-image">
+							</div>
+							<p class="team-member-name">Carmen Li</p>
+							<p class="team-member-desc">Outreach Team</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Daniel Gao.jpg" alt="Daniel Gao" class="team-member-image">
+							</div>
+							<p class="team-member-name">Daniel Gao</p>
+							<p class="team-member-desc">Outreach Team</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Elton Zeng.jpg" alt="Elton Zeng" class="team-member-image">
+							</div>
+							<p class="team-member-name">Elton Zeng</p>
+							<p class="team-member-desc">Outreach Team</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Jasmine Chow.jpg" alt="Jasmine Chow" class="team-member-image">
+							</div>
+							<p class="team-member-name">Jasmine Chow</p>
+							<p class="team-member-desc">Outreach Team</p>
+						</div>
+					</div>
+					<div class="team-group-div">
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Alexa Der.jpg" alt="Alexa Der" class="team-member-image">
+							</div>
+							<p class="team-member-name">Alexa Der</p>
+							<p class="team-member-desc">Internal Team</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Caye Lee.jpg" alt="Caye Lee" class="team-member-image">
+							</div>
+							<p class="team-member-name">Caye Lee</p>
+							<p class="team-member-desc">Internal Team</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Junxian Liu.jpg" alt="Junxian Liu" class="team-member-image">
+							</div>
+							<p class="team-member-name">Junxian Liu</p>
+							<p class="team-member-desc">Internal Team</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Claire Tao.jpg" alt="Claire Tao" class="team-member-image">
+							</div>
+							<p class="team-member-name">Claire Tao</p>
+							<p class="team-member-desc">Internal Team</p>
+						</div>
+						<div class="team-member-div">
+							<div class="team-member-image-div">
+								<img src="/img/team/Kami Wang.jpg" alt="Kami Wang" class="team-member-image">
+							</div>
+							<p class="team-member-name">Kami Wang</p>
+							<p class="team-member-desc">Internal Team</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<div id="sponsors" class="container">
+					<h2 class="title">Partners</h2>
+					<div class="image-list">
+						<a class="sponsor-div partner-div data-aos" href="https://www.missionbit.org/" title="Mission Bit" target="_blank" rel="noopener">
+							<img src="https://rafael.sirv.com/hackthefog/MissionBit.png?format=webp&webp.fallback=jpg" alt="Mission Bit" class="img-center">
+							<h3>MissionBit</h3>
+						</a>
+						<a class="sponsor-div partner-div data-aos" href="https://hackclub.com/bank/" title="Hack Club Bank" target="_blank" rel="noopener">
+							<img src="https://rafael.sirv.com/hackthefog/HackClubBank.png?format=webp&webp.fallback=jpg" alt="Hack Club Bank" class="img-center">
+							<h3>Hack Club Bank</h3>
+						</a>
+					</div>
+
+					<h2 class="title">Bronze Sponsors</h2>
+					<div class="image-list">
+						<a class="sponsor-div data-aos" href="https://www.hyperxgaming.com/unitedstates/us" title="HyperX" target="_blank" rel="noopener">
+							<img src="/img/HyperX.svg" alt="HyperX">
+						</a>
+						<a class="sponsor-div data-aos" href="https://www.linode.com/" title="Linode" target="_blank" rel="noopener">
+							<img src="/img/Linode.svg" alt="Linode">
+						</a>
+						<a class="sponsor-div data-aos" href="https://www.inspiritai.com/" title="Inspirit AI" target="_blank" rel="noopener">
+							<img src="/img/InspiritAI.png" alt="Inspirit AI">
+						</a>
+					</div>
+
+					<h2 class="title">Donors</h2>
+					<div class="image-list">
+						<a class="sponsor-div data-aos" href="https://www.echoar.xyz/" title="echoAR" target="_blank" rel="noopener">
+							<img src="/img/EchoAR.png" alt="echoAR">
+						</a>
+						<a class="sponsor-div data-aos" href="https://1password.com/" title="1Password" target="_blank" rel="noopener">
+							<img src="/img/1Password.png" alt="1Password">
+						</a>
+						<a class="sponsor-div data-aos" href="https://www.taskade.com/" title="Taskade" target="_blank" rel="noopener">
+							<img src="/img/taskade.png" alt="Taskade">
+						</a>
+						<a class="sponsor-div data-aos" href="https://artofproblemsolving.com/" title="Art of Problem Solving" target="_blank" rel="noopener">
+							<img src="/img/AoPS.png" alt="Art of Problem Solving">
+						</a>
+						<a class="sponsor-div data-aos" href="https://www.wolfram.com/language/" title="Wolfram Language" target="_blank" rel="noopener">
+							<img src="/img/wolfram.png" alt="Wolfram Language">
+						</a>
+						<a class="sponsor-div data-aos" href="https://replit.com/" title="Replit" target="_blank" rel="noopener">
+							<img src="/img/replit.svg" alt="Replit">
+						</a>
+						<a class="sponsor-div data-aos" href="https://angelasunconsulting.com/" title="Angela Sun Consulting" target="_blank" rel="noopener">
+							<img src="https://rafael.sirv.com/hackthefog/angelasun.png?format=webp&webp.fallback=jpg" alt="Angela Sun Consulting">
+						</a>
+						<a class="sponsor-div data-aos" href="https://balsamiq.cloud/" title="Balsamiq Cloud" target="_blank" rel="noopener">
+							<img src="/img/balsamiq.svg" alt="Balsamiq Cloud">
+						</a>
+						<a class="sponsor-div data-aos" href="https://www.sashido.io/en/" title="Sashido" target="_blank" rel="noopener">
+							<img src="/img/sashido.png" alt="Sashido">
+						</a>
+						<a class="sponsor-div data-aos" href="https://discord.com/invite/QHQbRJc7zP" title="Lumist High School" target="_blank" rel="noopener">
+							<img src="/img/LumistHS.png" alt="Lumist High School">
+						</a>
+					</div>
+					<p class="sponsor-interested">
+						If you are interested in sponsoring our event, contact us at <a class="highlight-link" href="mailto:contact@hackthefog.com">contact@hackthefog.com</a><br>
+						Also check out our <a class="highlight-link" href="/Prospectus.pdf">Sponsorship Prospectus</a> for details
+					</p>
+				</div>
+			</div>
+
+			<footer>
+				<div class="center">
+					<h3>Follow us</h3>
+					<div>
+						<a target="_blank" rel="noopener" href="https://www.instagram.com/hackthefog" aria-label="instagram" style="margin-right:0.5rem;color:#ECEEF0">
+							<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="instagram" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48">
+								<path d="M16,28c11,0 12,-1 12,-12c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,11 1,12 12,12ZM16 9.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 1 0 0-12.324zM16 20a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm7.845-10.405a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"></path>
+							</svg>
+						</a>
+						<a target="_blank" rel="noopener" href="https://twitter.com/hackthefog" aria-label="twitter" style="margin-right:0.5rem;color:#ECEEF0">
+							<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="twitter" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48">
+								<g>
+									<path d="M16,28c11,0 12,-1 12,-12c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,11 1,12 12,12Zm5.825,-13.901c0,3.669 -2.889,7.901 -8.172,7.901l0,0c-1.622,0 -3.132,-0.46 -4.403,-1.248c0.225,0.026 0.454,0.039 0.685,0.039c1.346,0 2.585,-0.444 3.568,-1.189c-1.258,-0.022 -2.318,-0.825 -2.684,-1.928c0.175,0.032 0.355,0.05 0.54,0.05c0.262,0 0.516,-0.034 0.758,-0.098c-1.315,-0.255 -2.305,-1.377 -2.305,-2.722c0,-0.013 0,-0.024 0.001,-0.036c0.387,0.208 0.829,0.333 1.301,0.348c-0.772,-0.498 -1.279,-1.348 -1.279,-2.312c0,-0.509 0.143,-0.985 0.389,-1.396c1.417,1.681 3.534,2.786 5.921,2.902c-0.049,-0.204 -0.074,-0.416 -0.074,-0.633c0,-1.533 1.286,-2.777 2.872,-2.777c0.826,0 1.573,0.338 2.097,0.877c0.654,-0.124 1.269,-0.356 1.824,-0.674c-0.215,0.649 -0.67,1.192 -1.263,1.536c0.581,-0.067 1.134,-0.216 1.649,-0.437c-0.384,0.557 -0.872,1.046 -1.433,1.438c0.006,0.119 0.008,0.239 0.008,0.359Z"></path>
+								</g>
+							</svg>
+						</a>
+						<a target="_blank" rel="noopener" href="https://github.com/hackthefog" aria-label="github" style="margin-right:0.5rem;color:#ECEEF0">
+							<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="github" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48">
+								<g>
+									<path d="M18.837,27.966c8.342,-0.241 9.163,-1.997 9.163,-11.966c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,9.995 0.826,11.734 9.228,11.968c0.073,-0.091 0.1,-0.205 0.1,-0.321c0,-0.25 -0.01,-2.816 -0.015,-3.699c-3.037,0.639 -3.678,-1.419 -3.678,-1.419c-0.497,-1.222 -1.213,-1.548 -1.213,-1.548c-0.991,-0.656 0.075,-0.643 0.075,-0.643c1.096,0.075 1.673,1.091 1.673,1.091c0.974,1.617 2.556,1.15 3.178,0.879c0.099,-0.683 0.381,-1.15 0.693,-1.414c-2.425,-0.267 -4.974,-1.175 -4.974,-5.23c0,-1.155 0.426,-2.099 1.124,-2.839c-0.113,-0.268 -0.487,-1.344 0.107,-2.8c0,0 0.917,-0.285 3.003,1.084c0.871,-0.235 1.805,-0.352 2.734,-0.356c0.927,0.004 1.861,0.121 2.734,0.356c2.085,-1.369 3,-1.084 3,-1.084c0.596,1.456 0.221,2.532 0.108,2.8c0.7,0.74 1.123,1.684 1.123,2.839c0,4.065 -2.553,4.96 -4.986,5.221c0.392,0.327 0.741,0.973 0.741,1.96c0,0.946 -0.006,2.619 -0.01,3.728c-0.002,0.549 -0.003,0.959 -0.003,1.074c0,0.109 0.029,0.224 0.095,0.319Z"></path>
+								</g>
+							</svg>
+						</a>
+						<a target="_blank" rel="noopener" href="https://www.tiktok.com/@hackthefog?lang=en" aria-label="tiktok" style="margin-right:0.5rem;color:#ECEEF0">
+							<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="twitter" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48">
+								<path d="M16,28c11,0 12,-1 12,-12c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,11 1,12 12,12Z
+M24 14.4C22.5 14.4 21.1 14 19.9 13.2L19.9 18.7C19.9 20.8 18.5 22.7 16.4 23.4 14.2 24.1 11.8 23.6 10.3 22 8.9 20.4 8.6 18.2 9.7 16.3 10.7 14.5 12.9 13.5 15.2 13.8L15.2 16.5C14.2 16.2 13 16.6 12.4 17.4 11.8 18.2 11.8 19.3 12.4 20.1 13.1 20.9 14.2 21.2 15.2 20.9 16.2 20.6 16.9 19.7 16.9 18.7L16.9 8 19.9 8C19.9 8.2 19.9 8.5 19.9 8.7 20.2 9.7 20.8 10.6 21.8 11.1 22.4 11.5 23.2 11.8 24 11.8zM24 14.4Z"></path>
+							</svg>
+						</a>
+						<a target="_blank" rel="noopener" href="https://www.facebook.com/hackthefog" aria-label="facebook" style="margin-right:0.5rem;color:#ECEEF0">
+							<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="facebook" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48">
+								<g>
+									<path d="M19.491,27.944c7.731,-0.319 8.509,-2.242 8.509,-11.944c0,-11 -1,-12 -12,-12c-11,0 -12,1 -12,12c0,10.985 0.997,11.997 11.956,12l0,-7.667l-2.956,0l0,-3.377l2.956,0l0,-2.491c0,-2.891 1.789,-4.465 4.403,-4.465c1.251,0 2.327,0.092 2.641,0.133l0,3.021l-1.813,0.001c-1.421,0 -1.696,0.666 -1.696,1.644l0,2.157l3.39,0l-0.442,3.377l-2.948,0l0,7.611Z"></path>
+								</g>
+							</svg>
+						</a>
+						<a target="_blank" rel="noopener" href="mailto:contact@hackthefog.com" aria-label="email-fill" style="margin-right:0.5rem;color:#ECEEF0">
+							<svg fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" xmlns="http://www.w3.org/2000/svg" aria-label="email-fill" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="48" height="48">
+								<g>
+									<path d="M16,26c11,0 12,-0.833 12,-10c0,-9.167 -1,-10 -12,-10c-11,0 -12,0.833 -12,10c0,9.167 1,10 12,10Zm-8.651,-14.774c0.411,-0.344 1.023,-0.289 1.366,0.124c1.335,1.601 5.617,5.318 7.285,6.592c1.696,-1.296 5.931,-4.963 7.285,-6.592c0.343,-0.413 0.955,-0.468 1.366,-0.124c0.412,0.344 0.467,0.957 0.124,1.37c-0.695,0.838 -2.02,2.129 -3.429,3.404c1.409,1.275 2.734,2.566 3.429,3.404c0.343,0.412 0.288,1.026 -0.124,1.37c-0.411,0.344 -1.023,0.289 -1.366,-0.124c-0.662,-0.798 -2.015,-2.083 -3.422,-3.339c-1.102,0.95 -2.137,1.789 -2.841,2.291c-0.302,0.213 -0.644,0.398 -1.022,0.398c-0.378,0 -0.72,-0.185 -1.021,-0.398c-0.691,-0.492 -1.728,-1.335 -2.835,-2.292c-1.414,1.264 -2.775,2.556 -3.429,3.34c-0.343,0.413 -0.955,0.468 -1.366,0.124c-0.411,-0.344 -0.467,-0.957 -0.124,-1.37l0.001,-0.001c0.683,-0.822 2.018,-2.119 3.436,-3.403c-1.418,-1.284 -2.753,-2.582 -3.436,-3.403l-0.001,-0.001c-0.343,-0.413 -0.287,-1.026 0.124,-1.37Z"></path>
+								</g>
+							</svg>
+						</a>
+					</div>
+					<h4>Fiscally sponsored by The Hack Foundation<br>Nonprofit EIN: 81-2908499</h4>
+				</div>
+			</footer>
+		</main>
+
+		<script type="text/javascript">
+			// Scroll animation initiation
+			// document.querySelector('html').classList.remove('no-js');
+			if(!window.Cypress) {
+				AOS.init({
+					mirror: true
+				});
+
+				document.addEventListener('aos:in', function(e) {
+					console.log('in!', e.detail);
+				});
+			}
+
+			/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+			let initDone = false;
+
+			function initDropDown() {
+				if(initDone) return;
+				const hamburger = document.getElementById('hamburger-icon');
+				const mobile_link_container = document.getElementById('mobile-link-container');
+				const mobile_nav_text = document.getElementById('mobile-nav-htc-title');
+				document.getElementById('hamburger-icon-wrapper').addEventListener('click', event => {
+					event.preventDefault();
+					if(!hamburger.classList.contains('active')) hamburger.classList.add('active');
+					else hamburger.classList.remove('active');
+
+					if(!mobile_nav_text.classList.contains('mobile-nav-hide-title')) mobile_nav_text.classList.add('mobile-nav-hide-title');
+					else mobile_nav_text.classList.remove('mobile-nav-hide-title');
+
+					if(!mobile_link_container.classList.contains('mobile-nav-display')) mobile_link_container.classList.add('mobile-nav-display');
+					else mobile_link_container.classList.remove('mobile-nav-display');
+					return false;
+				});
+
+				for(const link of document.querySelectorAll(".mobile-nav-links")) {
+					link.addEventListener('click', () => {
+						hamburger.classList.remove('active');
+						mobile_nav_text.classList.add('mobile-nav-hide-title');
+						mobile_link_container.classList.add('mobile-nav-display');
+						return true;
+					});
+				}
+				initDone = true;
+			}
+
+			initDropDown()
+		</script>
+	</body>
+</html>
