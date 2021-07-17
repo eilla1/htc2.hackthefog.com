@@ -4,7 +4,8 @@
   "description": "Homepage for Hack the Cloud 2.0",
 	"main": "index.js",
   "scripts": {
-    "start": "npx http-server -c-1 -p 3000",
+    "start": "node index.js",
+    "startStatic": "npx http-server -c-1 -p 3000",
     "dev": "nodemon . --ext \"js,css,html,ejs\""
   },
   "keywords": [],
